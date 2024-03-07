@@ -1,5 +1,9 @@
 :root {
-    --primary: #7752fe;
+    --primary: #fb8b24;
+}
+
+body {
+    background: #000;
 }
 
 .infoCard {
