@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <title>Comparison</title>
+</head>
+
+<body>
+    
+    <h1 class="display-5 my-5 text-center text-primary-emphasis ">Compare your Opportunities!</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            <table class="table">
+                <tr class="border border-primary bg-primary bg-gradient bg-opacity-75">
+                    <th>Select Preference</th>
+                    <th width="300px">
+                        <select class="form-control" id="select1" onchange="item1(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                    <th width="300px">
+                        <select class="form-control" id="select2" onchange="item2(this.value)">
+                            <option value="0">-- Select Anyone --</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr class="border border-primary bg-primary bg-gradient bg-opacity-25">
+                    <th>Position Title</th>
+                    <td id="title1">N/A</td>
+                    <td id="title2">N/A</td>
+                </tr>
+                <tr class="border border-primary bg-primary bg-gradient bg-opacity-25">
+                    <th>Sector Name</th>
+                    <td id="sector1">N/A</td>
+                    <td id="sector2">N/A</td>
+                </tr>
+                <tr class="border border-primary bg-primary bg-gradient bg-opacity-25">
+                    <th>Sub Sector Name</th>
+                    <td id="subsector1">N/A</td>
+                    <td id="subsector2">N/A</td>
+                </tr>
+                <tr class="border border-primary bg-primary bg-gradient bg-opacity-25">
+                    <th>Wage Minimum </th>
+                    <td id="min1">N/A</td>
+                    <td id="min2">N/A</td>
+                </tr>
+                <tr class="border border-primary bg-primary bg-gradient bg-opacity-25">
+                    <th>Wage Maximum</th>
+                    <td id="max1">N/A</td>
+                    <td id="max2">N/A</td>
+                </tr>
+                <tr class="border border-primary bg-primary bg-gradient bg-opacity-25">
+                    <th>Position Description</th>
+                    <td id="description1">N/A</td>
+                    <td id="description2">N/A</td>
+                </tr>
+                <tr class="border border-primary bg-primary bg-gradient bg-opacity-25">
+                    <th>Education Requirement</th>
+                    <td id="req1">N/A</td>
+                    <td id="req2">N/A</td>
+                </tr>
+                <tr class="border border-primary bg-primary bg-gradient bg-opacity-25">
+                    <th>Experience/Skills</th>
+                    <td id="skills1">N/A</td>
+                    <td id="skills2">N/A</td>
+                </tr>
+                <tr class="border border-primary bg-primary bg-gradient bg-opacity-25">
+                    <th>Minimum Hours Peak</th>
+                    <td id="hours1">N/A</td>
+                    <td id="hours2">N/A</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+<script src="data/data.js"></script>
+<script src="main.js"></script>
