@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(54 57 63);
+        }
+        .forum{
+            height: 100vh;
+            width:100vw;
+            display: grid;
+            place-content: center;
+        }
+    </style>
     <title>Calendar</title>
 </head>
 <body>
-    <iframe src="https://embed.styledcalendar.com/#KF3XLSNAf4tJ7aZUHgtl" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
-<script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+    <div class="forum">
+    <widgetbot
+  server="1152294604872355842"
+  channel="1152294605476343870"
+  width="800"
+  height="600"
+></widgetbot>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 </body>
 </html>
