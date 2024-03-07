@@ -57,6 +57,27 @@
         <title>Job Description</title>
     </head>
     <body>
+        <div id="liveAlertPlaceholder"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmation</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">Are you sure you want to apply for this job position?</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <a href="./infoPortal.html">
+                            <button type="button" class="btn btn-primary" id="liveAlertBtn" data-bs-dismiss="modal">
+                                Yes
+                            </button></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="jobDescContainer">
             <div class="container">
                 <div class="title">RN LEADERSHIP POSITION</div>
@@ -113,6 +134,7 @@
                 </div>
             </div>
         </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="./js/oneJobInfo.js"></script>
     </body>

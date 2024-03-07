@@ -55,6 +55,7 @@ getData().then(() => {
                     <div class="section-title">Job Type :</div>
                     <div>${job.PositionType}</div>
                 </div>
+                <div class='row d-flex justify-content-center  '> <button class="btn btn-info" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style='width:10rem;'>Apply Now</button> </div>
         </div>
                 `;
 

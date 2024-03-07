@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: playfair display;
+            }
+
+            .contact {
+                position: relative;
+                min-height: 100vh;
+                padding: 50px 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-image: url(./images/contactus.jpeg);
+                background-size: cover;
+                font-family: playfair display;
+            }
+
+            .contact .content {
+                max-width: 1000px;
+                text-align: center;
+                font-size: large;
+                font-family: playfair display;
+                font-weight: bold;
+            }
+
+            .contact .content h2 {
+                font-size: 75px;
+                font-weight: 500;
+                color: #fff;
+                font-family: playfair display;
+                font-size: 30px;
+            }
+
+            .contact .content p {
+                font-weight: 300;
+                color: #ffaeae;
+                font-family: playfair display;
+                font-size: 30px;
+            }
+
+            .container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+                font-family: playfair display;
+            }
+
+            .container .ContactInfo {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .container .ContactInfo .box {
+                position: relative;
+                padding: 20px 0px;
+                display: flex;
+            }
+
+            .container .ContactInfo .box .text {
+                display: flex;
+                margin-left: 20px;
+                font-size: 16px;
+                color: #fff;
+                flex-direction: column;
+                font-weight: 300px;
+            }
+
+            .container .ContactInfo .box .icon {
+                font-weight: 500;
+                color: black;
+                font-size: 40px;
+            }
+
+            .container .ContactInfo .box .text h3 {
+                font-weight: 500;
+                color: black;
+                font-size: 40px;
+                font-family: "Times New Roman", Times, serif;
+            }
+
+            .Contactform {
+                width: 40%;
+                padding: 40px;
+                background: #fff;
+                font-size: 36px;
+                font-family: "Times New Roman", Times, serif;
+            }
+
+            .Contactform h2 {
+                font-size: 30px;
+                color: #333;
+                font-weight: 500;
+            }
+
+            #ContactUs {
+                font-family: Georgia, "Times New Roman", Times, serif;
+                font-size: 75px;
+            }
+
+            .Contactform .inputbox {
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .Contactform .inputbox input,
+            .Contactform .inputbox textarea {
+                width: 100%;
+                padding: 5px 0px;
+                font-size: 16px;
+                margin: 10px 0px;
+                border: none;
+                border-bottom: 2px solid #333;
+                outline: none;
+                resize: none;
+            }
+
+            .Contactform .inputbox span {
+                position: absolute;
+                left: 0;
+                padding: 5px 0px;
+                font-size: 16px;
+                margin: 10px 0px;
+                pointer-events: none;
+                transition: 0.5s;
+                color: #666;
+            }
+
+            .Contactform .inputbox input:focus ~ span,
+            .Contactform .inputbox input:valid ~ span,
+            .Contactform .inputbox textarea:focus ~ span,
+            .Contactform .inputbox textarea:valid ~ span {
+                color: #e91e63;
+                font-size: 12px;
+                transform: translateY(-20px);
+            }
+
+            .Contactform .submit-button {
+                width: 100%;
+                background: #00bcd4;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                font-size: 18px;
+            }
+        </style>
+        <title>Contact us</title>
+        <link rel="stylesheet" href="./css/`contactus.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+            integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <div class="contact">
+            <div class="content">
+                <h2>Contact Us!</h2>
+                <p>We're here to listen to you!</p>
+            </div>
+            <div class="container">
+                <div class="ContactInfo">
+                    <div class="box">
+                        <div class="icon">&#11044;</div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Thadomal Shahani College<br />Bandra West<br />Mumbai</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">&#x260E;</div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>7700963786</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">&#9993;</div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>sap3ra@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Contactform">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required" />
+                            <span>Full Name:</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required" />
+                            <span>Phone number:</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required" />
+                            <span>Gmail:</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea required="required"></textarea>
+                            <span>Type in your message....</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" name="" value="Send" class="submit-button" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

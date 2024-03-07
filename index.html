@@ -1,66 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Golden Hour Brew</title>
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@900&family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Aladin&family=Maven+Pro:wght@900&family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Hour Brew</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@900&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Maven+Pro:wght@900&family=Poppins&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Aladin&family=Berkshire+Swash&family=Maven+Pro:wght@900&family=Poppins&display=swap"
+            rel="stylesheet"
+        />
 
-    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Berkshire+Swash&family=Maven+Pro:wght@900&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Aladin&family=Berkshire+Swash&family=Maven+Pro:wght@900&family=Poppins:wght@200;400&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Berkshire+Swash&family=Maven+Pro:wght@900&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+        <!-- materialise -->
+        <!-- CSS  -->
+    </head>
 
-</head>
+    <body>
+        <header>
+            <a href="#" class="logo"><i class="bx bxs-home"></i>CampusConnect</a>
 
-<body>
-    <header>
-        <a href="#" class="logo"><i class='bx bxs-home'></i>CampusConnect</a>
+            <ul class="navlist">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="./infoPortal.html">Explore Jobs</a></li>
+                <li><a href="#shop">Calendar</a></li>
+                <!-- <li><a href="#review">Reviews</a></li> -->
+                <li id="hasSubList">
+                    <a href="#">More...</a>
+                    <ul class="innerList">
+                        <li>Resources</li>
+                        <li>Forum</li>
+                        <li>Calendar</li>
+                    </ul>
+                </li>
 
-        <ul class="navlist">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">Recents</a></li>
-            <li><a href="#shop">Resources</a></li>
-            <li><a href="#review">Reviews</a></li>
-            <li><a href="#contact">Profile</a></li>
-        </ul>
+                <li><a href="./register.html">Profile</a></li>
+            </ul>
 
-        <div class="nav-icons">
-            <a href="#"><i class='bx bx-search-alt' ></i></a>
-            <a href="#"><i class='bx bx-cart' ></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
+            <div class="nav-icons">
+                <a href="#"><i class="bx bx-search-alt"></i></a>
+                <a href="#"><i class="bx bx-cart"></i></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+
+        <!--home-->
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>
+                    Bridging <br />
+                    Dreams & <br />
+                    Careers <3
+                </h1>
+                <h4>Find Your Perfect Fit Here</h4>
+                <a href="#" class="myBtn">Explore Menu<i class="bx bxs-right-arrow"></i></a>
+                <a href="#" class="myBtn">Order now<i class="bx bx-cart-alt"></i></a>
+            </div>
+            <div class="home-img">
+                <img src="10191067-fotor-bg-remover-202403070201.png" />
+            </div>
+        </section>
+
+        <div class="testimonial">
+            <div class="testimonial-text">
+                <div class="user-text">
+                    <h2>Hear From Our Students</h2>
+                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    <p>
+                        MyFundQuest has helped me overcome my financial difficulties and achieve my dream of studying
+                        abroad. The entire application process was smooth and no hurdles were created.
+                    </p>
+                    <span>Ronit Kumar</span>
+                </div>
+
+                <div class="user-text active-text">
+                    <h2>Hear From Our Students</h2>
+                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    <p>
+                        I am glad that I found this platform. I can now pursue my dream career in my dream college. Hats
+                        off to MyFundQuest for providing me with best resources and achieve my dreams!
+                    </p>
+                    <span>Ramya Nair</span>
+                </div>
+
+                <div class="user-text">
+                    <h2>Hear From Our Students</h2>
+                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    <p>
+                        The best place to start your CollegePrep right away. MyFundQuest provided me with the best
+                        mentors and helped me land with the best college.
+                    </p>
+                    <span>Rita </span>
+                </div>
+
+                <div class="user-text">
+                    <h2>Hear From Our Students</h2>
+                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    <p>
+                        Always wanted to apply for Aeronautics but the fee structure held me back. With right
+                        scholarship guidance from MyFundQuest, I am now achieving my dream of studying Aerounatics!
+                    </p>
+                    <span>Rishi Naik</span>
+                </div>
+
+                <div class="user-text">
+                    <h2>Hear From Our Students</h2>
+                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    <p>
+                        Their mentor sessions have been of great help during the entire application process. Grateful to
+                        the entire team of MyFundQuest!
+                    </p>
+                    <span>Mayur Mishra</span>
+                </div>
+            </div>
+
+            <div class="testimonial-pic">
+                <img src="./images/aditi_peep1.jpg" class="user-pic" onclick="showReview()" />
+                <img src="./images/aditi_peep2.jpg" class="user-pic active-pic" onclick="showReview()" />
+                <img src="./images/aditi_peep3.jpg" class="user-pic" onclick="showReview()" />
+                <img src="./images/aditi_peep4.jpg" class="user-pic" onclick="showReview()" />
+                <img src="./images/aditi_peep5.jpg" class="user-pic" onclick="showReview()" />
+            </div>
         </div>
 
-    </header>
-
-    <!--home-->
-    <section class="home" id="home">
-        <div class="home-text">
-            <h1>Bridging <br> Dreams & <br> Careers
-                <3</h1>
-                    <h4>Find Your Perfect Fit Here</h4>
-                    <a href="#" class="btn">Explore Menu<i class='bx bxs-right-arrow'></i></a>
-                    <a href="#" class="btn">Order now<i class='bx bx-cart-alt'></i></a>
-        </div>
-        <div class="home-img">
-            <img src="10191067-fotor-bg-remover-202403070201.png">
-        </div>
-    </section>
-
-</body>
-
+        <!-- materialise js -->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+    </body>
 </html>
