@@ -21,11 +21,14 @@ export const auth = await getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
 const registerWithEmail = async (email, pass) => {
-    try {
-        await createUserWithEmailAndPassword(auth, email, pass);
-        window.location.href = "aditiUserinfo.html";
-    } catch (err) {
-        console.log(err);
+    if(email && password)
+    {
+        try {
+            await createUserWithEmailAndPassword(auth, email, pass);
+            window.location.href = "aditiUserinfo.html";
+        } catch (err) {
+            console.log(err);
+        }
     }
 };
 
@@ -39,20 +42,26 @@ document.getElementById("registerBtn").onclick = async function (e) {
     e.preventDefault();
     const email = document.getElementById("regEmail").value;
     const pass = document.getElementById("regPassword").value;
-    await registerWithEmail(email, pass);
-    window.location.href = "aditiUserinfo.html";
+    if(email && password)
+    {
+        await registerWithEmail(email, pass);
+        window.location.href = "aditiUserinfo.html";
+    }
 };
 
 document.getElementById("loginBtn").onclick = async function (e) {
     e.preventDefault();
     const email = document.getElementById("loginEmail").value;
     const password = document.getElementById("loginPassword").value;
-
-    try {
-        await signInWithEmailAndPassword(auth, email, password);
-        window.location.href = "dashboard.html";
-    } catch (error) {
-        alert(error);
+    if(email && password)
+    {
+        
+        try {
+            await signInWithEmailAndPassword(auth, email, password);
+            window.location.href = "dashboard.html";
+        } catch (error) {
+            alert(error);
+        }
     }
 };
 
