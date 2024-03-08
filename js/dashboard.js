@@ -27,6 +27,3 @@ const setValues = async () => {
 
 setValues();
 
-// document.getElementById("testBtn").onclick = function () {
-//     console.log(auth.currentUser.displayName);
-// };
