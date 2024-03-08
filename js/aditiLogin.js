@@ -21,7 +21,7 @@ export const auth = await getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
 const registerWithEmail = async (email, pass) => {
-    if(email && password)
+    if(email && pass)
     {
         try {
             await createUserWithEmailAndPassword(auth, email, pass);
@@ -42,7 +42,7 @@ document.getElementById("registerBtn").onclick = async function (e) {
     e.preventDefault();
     const email = document.getElementById("regEmail").value;
     const pass = document.getElementById("regPassword").value;
-    if(email && password)
+    if(email && pass)
     {
         await registerWithEmail(email, pass);
         window.location.href = "aditiUserinfo.html";
