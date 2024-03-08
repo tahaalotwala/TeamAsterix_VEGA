@@ -20,18 +20,24 @@
                 </div>
 
                 <form id="login" class="input-group">
-                    <input type="text" class="input-field" placeholder="Email/Username" id="loginEmail" />
+                    <input type="text" class="input-field" placeholder="Email/Username" id="loginEmail" required />
 
-                    <input type="password" class="input-field" placeholder="Enter Password" id="loginPassword" />
+                    <input
+                        type="password"
+                        class="input-field"
+                        placeholder="Enter Password"
+                        id="loginPassword"
+                        required
+                    />
                     <input type="checkbox" class="checkbox" /><span>Remember Me</span>
                     <button class="submit-btn" id="loginBtn" style="margin: 10px">Log In</button>
                     <button class="submit-btn" id="googleLoginBtn" style="margin: 10px">Login With Google</button>
                 </form>
 
                 <form id="register" class="input-group">
-                    <input type="text" class="input-field" placeholder="Username" id="regUsername" />
-                    <input type="text" class="input-field" placeholder="Email" id="regEmail" />
-                    <input type="password" class="input-field" placeholder="Enter Password" id="regPassword" />
+                    <input type="text" class="input-field" placeholder="Username" id="regUsername" required />
+                    <input type="text" class="input-field" placeholder="Email" id="regEmail" required />
+                    <input type="password" class="input-field" placeholder="Enter Password" id="regPassword" required />
                     <input type="checkbox" class="checkbox" /><span>I agree to terms & conditions</span>
                     <button class="submit-btn" id="registerBtn" style="margin: 10px">Register</button>
                     <button class="submit-btn" id="registerWithGoogle" style="margin: 10px">
